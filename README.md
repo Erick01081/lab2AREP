@@ -1,6 +1,6 @@
-# Microservices Architecture with Spring Boot
+# Microframeworks WEB
 
-This project demonstrates a basic microservices architecture using Spring Boot. It includes a simple web server that handles both dynamic service requests and static file serving.
+This project demonstrates a basic web server architecture using a microframework. It includes a simple server that handles both dynamic service requests and static file serving.
 
 ## Getting Started
 
