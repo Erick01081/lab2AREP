@@ -52,3 +52,43 @@ To run automated tests, use Maven:
 ```bash
 mvn test
 ```
+
+## Running the Web Application
+
+To test the web application, open a web browser and navigate to http://localhost:8080/index.html. You should see the form-based web application, which includes the following features:
+
+1. A form to enter your name and make a get request
+2. A button to review the number pi
+
+## Prototype Architecture
+
+C:.
+└───src
+    ├───main
+    │   ├───java
+    │   │   └───edu
+    │   │       └───escuelaing
+    │   │           └───arem
+    │   │               └───ASE
+    │   │                   └───app
+    │   └───resources
+    └───test
+        └───java
+            └───edu
+                └───escuelaing
+                    └───arem
+                        └───ASE
+                            └───app
+## Deployment
+
+To deploy the web server on a live system, you can package the application as a JAR file and run it using the same command as in the "Running the Server" section.
+
+## Built With
+
+* Java 22
+* org.json library for parsing JSON
+* HTTP server implementation using Java's built-in networking libraries
+
+## Authors
+
+Erick Montero
