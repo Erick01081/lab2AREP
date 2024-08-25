@@ -99,7 +99,6 @@ To deploy the web server on a live system, you can package the application as a 
 ## Built With
 
 * Java 22
-* org.json library for parsing JSON
 * HTTP server implementation using Java's built-in networking libraries
 
 ## Authors
