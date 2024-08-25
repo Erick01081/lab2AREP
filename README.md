@@ -61,7 +61,7 @@ To test the web application, open a web browser and navigate to http://localhost
 2. A button to review the number pi
 
 ## Prototype Architecture
-
+ ```
 C:.
 └───src
     ├───main
@@ -79,6 +79,7 @@ C:.
                     └───arem
                         └───ASE
                             └───app
+ ```
 ## Deployment
 
 To deploy the web server on a live system, you can package the application as a JAR file and run it using the same command as in the "Running the Server" section.
