@@ -41,8 +41,8 @@ Follow these steps to set up the development environment:
     ```
 
 5. The server will start on port 8080. You can access it via:
-    - `http://localhost:8080/hello?name=YourName`
-    - `http://localhost:8080/pi`
+    - `http://localhost:8080/App/hello?name=YourName`
+    - `http://localhost:8080/App/pi`
     - `http://localhost:8080/index.html`
 
 ## Running the Tests
