@@ -1,29 +1,39 @@
 package edu.escuelaing.arem.ASE.app;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static Map<String, Service> services = new HashMap();
+public class App {
+    private static Map<String, Service> services = new HashMap<>();
+    private static String staticFilesLocation = "";
 
-    public static void main( String[] args )
-    {
-        get("/hello", (req, resp) -> "Hello " + req);
-        get("/pi", (req, resp) -> {
-            return String.valueOf(Math.PI);
+    public static void main(String[] args) {
+        staticfiles("src/main/resources");
+        get("/hello", (req, resp) -> {
+            String name = req.getValues("name");
+            return name != null && !name.isEmpty() ? "Hello " + name : "Hello World!";
         });
-        String requestedUrl = "/app/hello?name=Prueba1";
-        System.out.println(services.get("/pi").getValue("", ""));
-        System.out.println(services.get("/hello").getValue("", ""));
+        get("/pi", (req, resp) -> String.valueOf(Math.PI));
 
+
+        // Iniciar el servidor web aquí
+        WebServer.getInstance().startServer();
     }
-    public static void get(String url, Service s){
-        services.put(url,s);
+
+    public static void get(String url, Service s) {
+        services.put("/App" + url, s);
+        System.out.println("Service registered in: /App" + url);
+    }
+
+    public static void staticfiles(String location) {
+        staticFilesLocation = location;
+    }
+
+    public static Map<String, Service> getServices() {
+        return services;
+    }
+
+    public static String getStaticFilesLocation() {
+        return staticFilesLocation;
     }
 }
