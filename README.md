@@ -84,6 +84,18 @@ C:.
 
 To deploy the web server on a live system, you can package the application as a JAR file and run it using the same command as in the "Running the Server" section.
 
+## View of the app
+
+![image](https://github.com/user-attachments/assets/37b48fca-4bde-4f1b-b10b-3241003731ca)
+
+![image](https://github.com/user-attachments/assets/29536ee0-e090-4e85-8c5b-103fae957b7f)
+
+![image](https://github.com/user-attachments/assets/134f981c-a1ae-4430-937a-72075d1d0f1c)
+
+![image](https://github.com/user-attachments/assets/a38b3ad7-8824-4674-926f-ae71b8be61ee)
+
+![image](https://github.com/user-attachments/assets/6dfe4eec-4e42-444c-a3ac-91cbb2ef8021)
+
 ## Built With
 
 * Java 22
